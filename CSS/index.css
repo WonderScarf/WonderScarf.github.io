@@ -1,0 +1,96 @@
+*{
+    border: 0;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: -apple-system,BlinkMacSystemFont,segoe ui,roboto,oxygen,cantarell,helvetica neue,ubuntu,sans-serif;
+    color: #1a1a1a;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    font-size: 2rem;
+}
+
+.topnav{
+    display: flex;
+    flex-direction: row;
+
+    overflow: auto;
+    white-space: nowrap;
+    background-color:#202020; 
+    margin-bottom: 3rem;
+}
+.topnav li{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topnav li a{
+    padding: 1rem;
+    line-height: 26px;
+    font-weight: 600;
+    color: darkcyan;
+    margin: 0 1rem;
+}
+
+.topnav li a:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.big{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.doublepart{
+    background-color:#202020;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2rem;
+}
+.doublepart_title{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+.doublepart_descript{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.doublepart_descript p{
+    line-height: 26px;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+@media only screen and (min-width: 250px) {
+    .topnav{
+        justify-content: center;
+    }
+
+}
+    
