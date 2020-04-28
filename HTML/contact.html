@@ -22,8 +22,52 @@
     </header>
     
     <main>
-        <h1 class="parttitle">Contact Me</h1>
+        <h1 class="title">Contact Me</h1>
+        <h3 class="title">Please input your information</h3>
         <article>
+            <form class="contactform_container">
+                <label for="nameinput">Full Name:</label>
+                <input type="text" name="nameinput" placeholder="Place Name Here..." required>
+
+                <label for="telephoneinput">Number:</label>
+                <input type="tel" name="telephoneinput" required placeholder="Place Phone Number Here...">
+
+                <label for="emailinput">Email:</label>
+                <input type="email" name="emailinput" required placeholder="Place Email Here">
+
+                <label for="provinceinput">Province:</label>
+                <select name="provinceinput">
+                    <option value="quebec" selected>Quebec</option>
+                    <option value="pei">PEI</option>
+                    <option value="ns">Nova Scotia</option>
+                    <option value="nb">New Brunswick</option>
+                    <option value="nfld">Newfoundland and Labrador</option>
+                    <option value="ontario">Ontario</option>
+                    <option value="nunavut">Nunavut</option>
+                    <option value="nwt">North West Territories</option>
+                    <option value="yukon">Yukon</option>
+                    <option value="bc">British Columbia</option>
+                    <option value="manitoba">Manitoba</option>
+                    <option value="alberta">Alberta </option>
+                    <option value="sask">Saskatchewan</option>
+                    <option value="na">None of the Above</option>
+                </select>
+
+                <label for="contactinput">Contact Method:</label>
+                <section id="contactinput">
+                    <input type="radio" name="contactinput" checked="checked" value="email">
+                    <label for="contactinput">Email</label>
+
+                    <input type="radio" name="contactinput" value="phone">
+                    <label for="contactinput">Phone</label>  
+                    
+                </section>
+
+                <label for="messageinput">Message:</label>
+                <textarea name="messageinput" required placeholder="Write Your Message Here..." rows="4" cols="30"></textarea><br><br>     
+
+            <button><input type="submit"></button>   
+            </form>
         </article>
     </main>
     

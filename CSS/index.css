@@ -5,6 +5,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    animation-play-state: paused;
 }
 
 body{
@@ -34,6 +35,10 @@ a{
     line-height: 26px;
     font-weight: 600;
     font-size: 1.2rem;
+}
+form{
+    background-color:#202020; 
+    color: #ffffff;
 }
 
 
@@ -109,7 +114,7 @@ a{
     grid-template-columns: 1fr;
     padding: 1rem;
     gap: 1.5rem;
-    background-color:#202020;
+    background-color: #202020;
     color: #ffffff;
 }
 
@@ -117,9 +122,66 @@ a{
     width: 100%;
     height: auto;
 }
+.image:hover{
+    mask-image: ;
+}
+
+.contactform_container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    justify-items: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+.contactform_container label{
+    font-size: 1.5rem;
+}
+.contactform_container textarea, .contactform_container select, .contactform_container option, .contactform_container input{
+    font-size: 1rem;
+    line-height: 26px;
+    color: #202020;
+    font-family: -apple-system,BlinkMacSystemFont,segoe ui,roboto,oxygen,cantarell,helvetica neue,ubuntu,sans-serif;
+    padding: .75rem;
+    resize: horizontal;
+}
+
+.contactform_container button input{
+    font-size: 1.5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+}
+
+#contactinput{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: .75rem 1rem;
+    font-size: 1rem;
+    line-height: 26px;
+    font-weight: 600;
+}
+#contactinput label{
+    line-height: 26px;
+    font-size: 1rem;
+
+}
+#contactinput input{
+    cursor: pointer;
+    text-align: center;
+
+}
 
 
 @media only screen and (min-width: 500px) {
+    .contactform_container{
+        grid-template-columns: 1fr 2fr;
+        padding: 2rem;
+    }
+
+    .contactform_container textarea, .contactform_container select, .contactform_container option, .contactform_container input{
+        width: 100%;
+    }
     .topnav{
         justify-content: center;
     }
